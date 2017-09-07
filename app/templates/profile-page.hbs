@@ -1,0 +1,38 @@
+{{user-header}}
+<div class="ui grid">
+	<div class="row">
+		<div class="sixteen wide column">
+			<div class="ui basic segment">
+				{{page-breadcrumbs}}
+			</div>
+		</div>
+	</div>
+</div>
+<div class="ui grid">
+	<div class="row">
+		<div class="four wide column">
+			<div class="ui basic segment">
+				<div class="ui secondary fluid vertical pointing menu">
+					<a class="active item">
+						Profile
+					</a>
+					<a class="item">
+						Company Details
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="twelve wide column">
+			<div class="ui basic segment">
+				{{user-profile}}
+			</div>
+		</div>
+	</div>
+</div>
+{{page-footer}}
+
+<script>
+	$('.cookie.nag')
+  .nag('show')
+;
+</script>

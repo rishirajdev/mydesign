@@ -7,6 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('search',{path: '/search'});
+  this.route('landing-page',{path: '/'});
+  this.route('search-result');
+  this.route('profile-page');
+  this.route('company-page');
 });
 
 export default Router;

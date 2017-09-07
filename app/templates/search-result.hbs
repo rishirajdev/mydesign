@@ -1,0 +1,53 @@
+{{user-header}}
+<div class="ui grid">
+	<div class="row">
+		<div class="two wide column">
+			<div class="ui basic segment">
+				{{page-breadcrumbs}}
+			</div>
+			
+		</div>
+		<div class="ten wide column">
+			<div class="ui basic segment">
+				<div class="ui fluid icon input">
+					<input type="text" placeholder="Search...">
+					<i class="search icon"></i>
+				</div>
+			</div>
+		</div>
+		<div class="two wide column"></div>
+	</div>
+	<div class="row">
+		<div class="two wide column">
+		</div>
+		<div class="fourteen wide column">
+		</div>
+		<!--<div class="two wide column"></div>-->
+	</div>
+	
+</div>
+<div class="ui internally celled grid">
+	<div class="row">
+		<div class="two wide column">
+			<i class="filter icon"></i>
+			Refine By
+		</div>
+		<div class="fourteen wide column">
+			<b>Filters : </b>
+			<div class="ui label">
+				Supplier
+				<i class="delete icon"></i>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="two wide column">
+			{{filters-list}}
+		</div>
+		<div class="fourteen wide column">
+			{{result-list}}
+		</div>
+	</div>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+{{page-footer}}
