@@ -1,0 +1,125 @@
+<form class="ui form">
+	<h4 class="ui dividing header">Company Information</h4>
+	<div class="field">
+	<label>Company Details</label>
+		<div class="fields">
+			<div class="eight wide column field">
+				<input type="text" name="company-name" placeholder="Company Name">
+			</div>
+			<div class="four wide column field">
+				<input type="text" name="est" placeholder="Established year">
+			</div>
+			<div class="four wide column field">
+				<input type="text" name="est" placeholder="Employee Count">
+			</div>
+		</div>
+	</div>
+	<div class="two fields">
+		<div class="field">
+			<label> Company Type</label>
+			<div class="ui fluid multiple search selection dropdown base-input-border" >
+                  <input type="hidden" name="ctype">
+                  <i class="dropdown icon" ></i>
+                  <div class="default text black-text">Company Type</div>
+					<div class="menu">
+						<div class="item" data-value="c1">Supplier</div>
+						<div class="item" data-value="c2">Buyer</div>
+						<div class="item" data-value="c3">Manufacturer</div>
+						<div class="item" data-value="c3">Consultancy</div>
+						<div class="item" data-value="c3">Other</div>
+					</div>
+			</div>
+		</div>
+		<div class="field">
+			<label>Web URL</label>
+			<div class="field">
+				<input type="text" name="url">
+			</div>
+		</div>
+	</div>
+	<div class="two fields">
+		<div class="field">
+			<label> Product Type</label>
+			<div class="ui fluid multiple search selection dropdown base-input-border" >
+                  <input type="hidden" name="ctype">
+                  <i class="dropdown icon" ></i>
+                  <div class="default text black-text">Product Type</div>
+					<div class="menu">
+						<div class="item" data-value="c1">Software</div>
+						<div class="item" data-value="c2">Electronics</div>
+						<div class="item" data-value="c3">Hardware</div>
+						<div class="item" data-value="c3">Other</div>
+					</div>
+			</div>
+		</div>
+		<div class="field">
+			<label>Company Email</label>
+			<div class="field">
+				<input type="text" name="email">
+			</div>
+		</div>
+	</div>
+	<div class="two fields">
+		<div class="field">
+			<label>Specialities</label>
+			<div class="ui fluid multiple search selection dropdown base-input-border" >
+                  <input type="hidden" name="ctype">
+                  <i class="dropdown icon" ></i>
+                  <div class="default text black-text">Specialities</div>
+					<div class="menu">
+						<div class="item" data-value="c1">Education</div>
+						<div class="item" data-value="c2">Finance</div>
+						<div class="item" data-value="c3">Healthcare</div>
+						<div class="item" data-value="c3">Other</div>
+					</div>
+			</div>
+		</div>
+		<div class="field">
+			<label>Language</label>
+			<div class="field">
+				<input type="text" name="language">
+			</div>
+		</div>
+	</div>
+	<div class="field">
+		<label> Company Description</label>
+		<div class="field">
+			<textarea placeholder="Tell us something about your company"></textarea>
+		</div>
+	</div>
+	<div class="field">
+		<label>Your Requirements</label>
+		<div class="field">
+			<textarea placeholder="What you are looking for eg.vendor,supplier,service-provider etc..."></textarea>
+		</div>
+	</div>
+	<div class="field">
+		<label>Company Address</label>
+		<div class="fields">
+			<div class="six wide field">
+				<input type="text" name="address" placeholder="Street Address">
+			</div>
+			<div class="two wide field">
+				<input type="text" name="city" placeholder="City">
+			</div>
+			<div class="four wide field">
+				<input type="text" name="state" placeholder="State">
+			</div>
+			<div class="four wide field">
+				<input type="text" name="country" placeholder="Country">
+			</div>
+			<div class="four wide field">
+				<input type="text" name="pincode" placeholder="Pin Code">
+			</div>
+		</div>
+	</div>
+	<div class="field">
+		<button class="ui primary button submit-button"  type="submit">Save</button>
+		<button class="ui button">Cancel</button>
+	</div>
+</form>
+<script>
+$('.ui.dropdown')
+  .dropdown()
+;
+</script>

@@ -13,18 +13,33 @@
 		<div class="four wide column">
 			<div class="ui basic segment">
 				<div class="ui secondary fluid vertical pointing menu">
-					<a class="active item">
+					<a class="active item" data-tab="first">
 						Profile
 					</a>
-					<a class="item">
+					<a class="item" data-tab="second">
 						Company Details
 					</a>
 				</div>
 			</div>
 		</div>
 		<div class="twelve wide column">
-			<div class="ui basic segment">
-				{{user-profile}}
+			<div class="ui attached active tab edit-form" data-tab="first">
+				<div class="ui grid">
+					<div class="twelve wide column">
+						<div class="ui basic segment">
+							{{user-profile}}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ui attached tab edit-form" data-tab="second">
+				<div class="ui grid">
+					<div class="twelve wide column">
+						<div class="ui basic segment">
+							{{company-profile}}
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -32,7 +47,5 @@
 {{page-footer}}
 
 <script>
-	$('.cookie.nag')
-  .nag('show')
-;
+	$('.menu .item').tab();
 </script>
